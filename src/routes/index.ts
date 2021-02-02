@@ -6,6 +6,7 @@ export const indexRouter = express.Router();
 
 const getIndexFunc = async (req: Request, res: Response, next:NextFunction) => {
   let bible:BibleObject = await apiCall();
+  // FOR SOME REASON THE API RETURNS THE OBJECT WITH THOSE NAMES AND NOT IN ARRAY. pls do not blame me for this, i know i could work a bit and make it better but this is just a POC
   let result: String = `
     data: ${bible.date}<br/><br/>
     1. book: ${bible[0].book||'unknown'}<br/>

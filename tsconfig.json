@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "allowJs": true,
+      "checkJs": true,
+      "target": "es5",
+      "strict": true, // when we want to see what we didnt change yet and stuff
+      "paths": {
+        "*": [
+            "./node_modules/*"
+        ]
+      }
+    },
+    "include": ["src/**/*"]
+}
